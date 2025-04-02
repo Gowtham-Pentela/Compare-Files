@@ -1,0 +1,106 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.result {
+    margin-top: 20px;
+    text-align: left;
+} */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #4f78fead, #65a93b);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* File Input */
+input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Result Container */
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    display: none;
+}
+
+/* Differences Display */
+.differences {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.file-diff {
+    width: 48%;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eef;
+    min-height: 100px;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+}
+
+/* Heading Styles */
+h1 {
+    color: #007BFF;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #007BFF;
+}
+

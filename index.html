@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Comparator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Comparator</h1>
+        <p>Select two files to compare:</p>
+
+        <input type="file" id="file1" accept=".txt, .csv, .xlsx, .xls, .docx, .pdf">
+        <input type="file" id="file2" accept=".txt, .csv, .xlsx, .xls, .docx, .pdf">
+        <button onclick="compareFiles()">Compare Files</button>
+
+        <div id="result" class="result-container">
+            <h3>Differences Found:</h3>
+            <div class="differences">
+                <div class="file-diff">
+                    <h4>Unique to File 1</h4>
+                    <pre id="uniqueFile1"></pre>
+                </div>
+                <div class="file-diff">
+                    <h4>Unique to File 2</h4>
+                    <pre id="uniqueFile2"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries for DOCX, PDF, and Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
